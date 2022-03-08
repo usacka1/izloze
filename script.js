@@ -8,9 +8,11 @@ for (let i=0; i<uzvaretajuSkiats; i++){
     rand = Math.floor(rand);
     //noapaļo uz leju
     let uzvaretajs = vardi[rand];
+    rindas.innerHTML +=`
+    //pievieno +. lai pieskaitītu nākamo
+    <tr>
+     <td>${i+1}</td>
+     <td>${uzvaretajs}</td>
+    </tr>`
+// $ norāda mainīgo
 }
-rindas.innerHTML +=`
-//pievieno +. lai pieskaitītu nākamo
-<tr>
-    <td>${i+1}</td>
-    <td>${uzvaretajs}</td>`
