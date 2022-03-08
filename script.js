@@ -3,16 +3,18 @@ const balvas = ["Dators", "Telefons", "Kafijas automāts", "Fotoaparāts", "Auto
 const naudaKopa = 1000000;
 let uzvaretajuSkiats = 5;
 let rindas = document.querySelector(".rindas");
-for (let i=0; i<uzvaretajuSkiats; i++){
-    let rand = Math.random()*vardi.length;
+for (let i = 0; i < uzvaretajuSkiats; i++) {
+    let rand = Math.random() * vardi.length;
     rand = Math.floor(rand);
     //noapaļo uz leju
     let uzvaretajs = vardi[rand];
-    rindas.innerHTML +=`
-    //pievieno +. lai pieskaitītu nākamo
+    let balva = balvas[rand];
+    rindas.innerHTML += `
     <tr>
-     <td>${i+1}</td>
+     <td>${i + 1}</td>
      <td>${uzvaretajs}</td>
+     <td>${balva}</td>
     </tr>`
-// $ norāda mainīgo
+    //pievieno +. lai pieskaitītu nākamo
+    // $ norāda mainīgo
 }

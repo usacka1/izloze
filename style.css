@@ -1,0 +1,17 @@
+table, th, td{
+  border: 1px solid;
+  width: 40%;
+  margin: auto;
+  background-color: rgb(255, 179, 153);
+  text-align: center;
+}
+body{
+    background-color: rgb(255, 198, 179);
+}
+h1{
+    text-align: center;
+}
+header{
+    background-color: rgb(255, 217, 204);
+    padding: 10px;
+}
